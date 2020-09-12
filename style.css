@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+#headerLogo{
+    margin-top: 3px;
+    padding: 4px;
+    padding-bottom: 0px;
+}
+@media only screen and (max-width:700px){
+    #tryBox{
+        display: block;
+        width: 70vw;
+        margin: auto;
+        padding-left: 23vw;
+        padding-top: 2.5vw;
+    }
+    
+    header{
+        display: block;
+    }
+    #headerLogo{
+        padding: 0;
+        size: 25vw;
+        width: 20%;
+        margin: auto;
+        display: block;
+    }
+
+    .navBar a{
+        font-size: 3.7vw;
+    }
+    .navBar li{
+        padding: 0;
+    }
+    .navBar ul{
+        margin-left: 0px;
+    }
+    #editorPara{
+        font-size: 14px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #introLeft{
+        padding-top: 0;
+    }
+    #symbolBox{
+        padding:2px;
+    }
+    #smartImageSection{
+        flex-direction: column;
+    }
+    .introRight{
+        padding-top: 1vh;
+    }
+    #latestCodeIntegration{
+        height: 20vh;
+        padding-top: 10px;
+    }
+    .card{
+        width: 68%;
+        margin: 4px;
+    }
+    #downloadAppLeft img{
+        width: 40%;
+    }
+    #downloadAppRight img{
+        height: 100%;
+    }
+    .navBar{
+        display: block;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .awesomeImgBox{
+        padding-top: 10vw;
+    }
+}
+
+.navBar ul{
+    display: flex;
+    font-size: 2vw;
+    margin-left: 8vw;
+}
+.navBar li{
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.navBar a,.navBar a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#tryBox{
+    margin-top: 10px;
+}
+.tryForFreeBtn{
+    background-color:rgb(11, 52, 105);
+    color: white;
+    padding: 10px;
+    width: 15vw;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+#editorHeading{
+    display: flex;
+    padding-top: 30px;
+}
+#symbolBox{
+    background-color: rgb(209, 132, 7);
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    padding: 4px;
+    text-align: center;
+}
+#editorHeading img{
+    text-align: center;
+    padding-top: 5px;
+}
+#editorPara{
+    background-color: rgb(175 169 169);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 5px;
+    padding-left: 10px;
+}
+#intro{
+    height: 100%;
+    width: 100%;
+}
+#introLeft{
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+    width: 40%;
+}
+#introLeft > p{
+    opacity: 0.9;
+    padding: 1px;
+    font-size: 2vw;
+}
+#title{
+    padding: 2vw;
+}
+#introLeftLinks{
+    /* padding-left: 2vw; */
+    padding-top: 10px;
+}
+#leftlink1{
+    font-size: 1.6vw;
+    margin-left: 1vw;
+}
+#leftlink2{
+    font-size: 1.6vw;
+    margin-left: 1vw;
+    background-color: #fff;
+    color: black;
+}
+#intro::before{
+    content: '';
+    background-image: url('./Images/headerBg.png') ;
+    opacity: 0.9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+/* partners */
+.partners{
+    padding: 1vw;
+    width: 11vw;
+}
+#partners p{
+    padding: 4px;
+    padding-top: 6vw;
+    text-align: center;
+}
+#partnersImageBox{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: auto;
+    width: 60%;
+}
+#awesomeApp{
+    height: 100%;
+    width: 100%;
+}
+#awesomeApp::before{
+    content: '';
+    background-image: url('./Images/phone.png') ;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: 40%;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+#awesomeRightSide{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 45vw;
+}
+.awesomeFeatures{
+    padding-left: 8px;
+    padding-top: 8px;
+}
+.awesomeInsideContent{
+    display: flex;
+}
+.awesomeInsideContent p{
+    padding-left: 9px;
+    padding-top: 6px;
+}
+.awesomeImgBox{
+    padding: 13px;
+    /* padding-top: 3.5vw; */
+    border-radius: 50%;
+}
+#speed{
+    /* the image 'S color can't be changed */
+    background-color: pink;
+}
+.heading{
+    padding: 4px;
+    padding-left: 75px;
+}
+#speedHead{
+    color: rgb(163, 88, 100);
+}
+#prototypeHead{
+    color: rgb(13, 54, 145);
+}
+#prototype{
+    background-color: rgb(224, 211, 211);
+}
+#vectorHead{
+    color: green;
+}
+#smartJackpots{
+    padding-top: 3vh;
+}
+#smartHeading{
+    display: flex; 
+    width: 80%;  
+    margin: auto;
+}
+#smartHeading div{ 
+    width: 0.5%;  
+    height: 20vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(214, 211, 211);
+}
+#smartImageSection{
+    display: flex;
+}
+/* why us section */
+#whyUs{
+    display: block;
+    margin: auto;
+    padding-left: 8vw;
+    padding-top: 10vw;
+}
+.whyUsHeading{
+    display: block;
+    margin:auto;
+    padding: 3vw;
+    width: 70%;
+}
+.whyUsHeading h3,.whyUsHeading p,#ultimateLeft h3,#ultimateLeft p,#extraFeaturesTitle h3,#extraFeaturesTitle p{
+    text-align: center;
+    font-size: 3vw;
+}
+.whyUsHeading p,#ultimateLeft p,#extraFeaturesTitle p{
+    font-size: 2vw;
+}
+.whyUsImages{
+    display: flex;
+    flex-wrap: wrap;
+}
+.whyUsImage{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 30%;
+}
+.whyUsImage img{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+.whyUsImageContent {
+    text-align: center;
+    font-size: 1.5vw;
+}
+.whyUsImgBox{
+    background-color: pink;
+    border-radius: 50%;
+    padding: 10px;
+}
+/* latest code integration */
+#latestCodeIntegration{
+    height: 35vw;
+    width: 100%;
+}
+#latestCodeIntegration::before{
+    content: '';
+    background-image: url('./Images/man.png') ;
+    opacity: 0.9;
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+
+}
+.introRight{
+    position: absolute;
+    left: 50%;
+    padding-top:10vh ;
+}
+#belowLearnMore{
+    position: relative;
+    left: 30vw;
+    top: 26vw;
+    width: 10%;
+}
+#JS{
+    position: relative;
+    left: 6vw;
+    top: 20vw;
+    width: 10%;
+}
+#Html{
+    position: relative;
+    left: 9vw;
+    top: 5vw;
+    width: 10%;
+}
+#gitHub{
+    position: relative;
+    left: 15vw;
+    top: 12vw;
+    width: 10%;
+}
+#sparrow{
+    position: relative;
+    left: 22vw;
+    top: 30vw;
+    width: 8%;
+}
+/* ultimate feature */
+#ultimateFeatures{
+    display: flex;
+}
+
+
+/* #ultimateFeatures::before{
+    content: '';
+    background-image: url('./Images/girl.png') ;
+    opacity: 0.9;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+} */
+.ultimateImgBox{
+    display: flex;
+    padding-top: 10px;
+    width: 20%;
+}
+.ultimateImgBox img{
+    height: 55%;
+    width: 90%;
+    position: relative;
+    top: 10vw;
+}
+#overlappingPhone{
+    position: relative;
+    top: 10vw;
+    right: 10vw;
+}
+#ultimateLeft{
+    width: 70%;
+    padding: 5vh;
+}
+/* extraFeaturesTitle section */
+#extraFeatures{
+    width: 80%;
+    margin: auto;
+}
+#extraFeaturesBtn{
+    border-radius: 10px;
+    background-color: rgb(245 241 241 / 79%);
+    padding: 10px;
+    text-align: center;
+
+}
+#cards{
+    display: flex;
+}
+.card{
+    text-align: center;
+    width: 48%;
+    margin: 4px;
+}
+.card strong{
+    font-size: 5vw;
+    padding: 1vw;
+}
+.cardUpperPart{
+    background-color: rgb(241 241 241);
+    border-radius: 5px;
+    margin-top: 4px;
+} 
+.card p{
+    opacity: 0.7;
+    font-size: 1.7vw;
+    padding: 1vw;
+}
+#trialLink a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.7vw;
+}
+#trialLink{
+    margin-top: 8px;
+}
+/* customer satisfaction */
+#clientSatisfaction{
+    display: flex;
+    margin-top: 4vw;
+}
+#ClientLeftImgBox{
+    width: 58%;
+}
+#ClientLeftImgBox img{
+    width: 100%;
+    height: 100%;
+}
+#clientInsideContent{
+    width: 40%;
+    /* border:solid; */
+    text-align: left;
+}
+#clientInsideContent p{
+    font-size: 1.5vw;
+    margin: 1vw;
+}    
+#customerDetails{
+    display: flex;
+}
+#customerDetails img{
+    width: 20%;
+}
+#customerDetails div{
+    /* display: flex;
+    flex-direction: column; */
+    margin: auto;
+    text-align: center;
+}
+#stars{
+    width: 30%;
+}
+#downloadApp{
+    display: flex;
+    height: 74%;
+}
+#downloadAppRight>img{
+    width: 100%;
+}
+#downloadAppRight{
+    width: 70%;
+}
+#downloadAppLeft{
+    width: 60%;
+    text-align: center;
+}
+footer{
+    padding: 5vh;
+    text-align: center;
+    background-color: rgb(36 39 107);
+    width: 100%;
+}
+/* footer ul{
+    display: flex;
+    margin: auto;
+    padding-left: 30vw;
+} */
+footer a,footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+footer li{
+    list-style: none;
+    padding: 4px;
+    display: inline-block;
+}
